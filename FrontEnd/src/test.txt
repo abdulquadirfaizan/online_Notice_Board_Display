@@ -1,0 +1,214 @@
+rafce
+<Login/> can also be called as Login(), since it is a functionalComponent which is nothing but a function.
+
+
+
+<></> This empty element is known as React.Fragment.
+
+
+
+
+/*Max width 4000px*/
+@media only screen and (max-width: 4100px) {
+    html {
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    *::before,
+    *::after {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+
+    .menu-item button {
+        justify-content: center;
+        align-items: center;
+        width: 132%;
+        height: 34px;
+        border-radius: 10px;
+        font-size: 1vw;
+        cursor: pointer;
+        display: inline-block;
+        line-height: 1;
+        background: #ffffff;
+        /* background-color: #4285f4; */
+        position: relative;
+    }
+
+    .navbar {
+        border: 2px solid black;
+        display: flex;
+        margin-top: 2px;
+        width: 100%;
+        height: 100px;
+        padding-left: 1%;
+        align-items: center;
+        justify-content: start;
+        background: #282A35;
+    }
+
+    nav {
+        width: 100%;
+        height: 50px;
+        background-color: #282A35;
+        padding: 0 20;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+
+    .homebtn {
+        color: rgb(0, 0, 0);
+        width: 300%;
+        min-height: 76px;
+        margin-right: 1%;
+        border-radius: 10px;
+        font-size: 1.2vw;
+        cursor: pointer;
+    }
+
+    .subtabsNotice {
+        /* border: 2px solid black; */
+        display: flex;
+        width: 100%;
+        min-height: 450px;
+        max-height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+
+    .editdelete {
+        width: 100%;
+        margin-left: 1%;
+        margin-bottom: 2%;
+        max-height: 1500px;
+        min-height: 1000px;
+        height: 100%;
+    }
+
+    .departmentnotices {
+        background: #dbdbdb54;
+        padding: 3px;
+        border-radius: 10px;
+        border: 2px solid rgb(0, 0, 0);
+        width: 100%;
+        max-height: 99%;
+        overflow: auto;
+        cursor: pointer;
+    }
+
+    .departmentrelatedNoticehead {
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        width: 31.5%;
+        max-height: 5vw;
+        font-size: 30px;
+        border: 2px solid black;
+        background: #1d1e25;
+        color: white;
+        border-radius: 7px;
+        margin: -5px;
+    }
+
+    .placementrelatedNotice {
+        width: 100%;
+        background: #dbdbdb54;
+        border: 2px solid rgb(0, 0, 0);
+        padding: 3px;
+        border-radius: 10px;
+        margin: 0% 1% 1% 0;
+        max-height: 99%;
+        overflow: auto;
+        cursor: pointer;
+    }
+
+    .placementrelatedNoticehead {
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        width: 31.5%;
+        max-height: 5vw;
+        font-size: 30px;
+        border: 2px solid black;
+        background: #1d1e25;
+        color: white;
+        border-radius: 7px;
+        margin: -5px;
+    }
+
+    hr {
+        position: relative;
+        margin-top: 2%;
+        border: none;
+        height: 2px;
+        background: rgba(0, 0, 0, 0.377);
+        box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.637);
+        margin-bottom: 5%;
+    }
+
+    .resultrelatedNotices {
+        width: 100%;
+        /* margin-top: 1%; */
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        background: #dbdbdb54;
+        border: 2px solid rgb(0, 0, 0);
+        padding: 3px;
+        border-radius: 10px;
+        margin: 0% 1% 1% 0;
+        max-height: 99%;
+        overflow: auto;
+        cursor: pointer;
+    }
+
+    .resultofplacementNoticehead {
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        width: 31.5%;
+        max-height: 5vw;
+        font-size: 30px;
+        border: 2px solid black;
+        background: #1d1e25;
+        color: white;
+        border-radius: 7px;
+        margin: -5px;
+        cursor: pointer;
+    }
+
+
+    .subclassofnotice {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 4vh;
+        font-size: x-large;
+        margin: 5px;
+        border: 1px solid rgba(18, 107, 110, 0.61);
+        background: linear-gradient(45deg, rgb(197, 194, 194), rgba(153, 241, 227, 0.589), rgb(249, 249, 250));
+        border-radius: 10px;
+    }
+
+    .detailing-of-notices {
+        display: block;
+        margin-top: 5vw;
+    }
+}
+
+*/
