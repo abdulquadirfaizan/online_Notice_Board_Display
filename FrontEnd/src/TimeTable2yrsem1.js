@@ -7,8 +7,9 @@ export const TimeTable2yrsem1 = () => {
 
   const [data, setData] = useState([])
   useEffect(() => {
-    fetch('http://localhost:3001/project_final')
+    fetch('http://localhost:5000/time_table_second_year')
       .then(res => res.json())
+      // .then(data => console.log(data))
       .then(data => setData(data))
       .catch(err => console.log(err));
   }, [])
@@ -23,87 +24,30 @@ export const TimeTable2yrsem1 = () => {
           <div className='Tableview'>
             <h2>Semester 1</h2>
             <div className='Tableshow'>
-              {/* <table>
-                <tr>
-                  <th>Time/Days</th>
-                  <th>9:00AM - 10:00AM</th>
-                  <th>10:00AM - 11:00 AM</th>
-                  <th>11:00AM - 12:00 AM</th>
-                  <th>12:01PM - 01:00 PM</th>
-                  <th>03:00PM - 04:00 PM</th>
-                  <th>04:00PM - 05:00 PM</th>
-                </tr>
-                <tr>
-                  <td>Monday</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                </tr>
-                <tr>
-                  <td>Tuesday</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                </tr>
-                <tr>
-                  <td>Wednesday</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                </tr>
-                <tr>
-                  <td>Thursday</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                </tr>
-                <tr>
-                  <td>Friday</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                </tr>
-                <tr>
-                  <td>Saturday</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                  <td>----</td>
-                </tr>
-              </table> */}
               <table>
                 <thead>
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Phone_Number</th>
-                  <th>Email</th>
-                  <th>Encrypted Password</th>
+                  <th>Days</th>
+                  <th>8:00AM-9:00AM</th>
+                  <th>9:00AM-10:00AM</th>
+                  <th>10:00AM-11:00AM</th>
+                  <th>11:00AM-12:00AM</th>
+                  <th>12:00PM-1:00PM</th>
+                  <th>2:00PM-3:00PM</th>
+                  <th>3:00PM-4:00PM</th>
+                  <th>4:00PM-5:00PM</th>
                 </thead>
                 <tbody>
                   {data.map((d, i) => {
                     <tr key={i}>
-                      <td>{d.id}</td>
-                      <td>{d.Name}</td>
-                      <td>{d.Phone_Number}</td>
-                      <td>{d.Password}</td>
-                      <td>{d.profile_pic}</td>
+                      <td>{d.days}</td>
+                      <td>{d.a}</td>
+                      <td>{d.b}</td>
+                      <td>{d.c}</td>
+                      <td>{d.d}</td>
+                      <td>{d.e}</td>
+                      <td>{d.f}</td>
+                      <td>{d.g}</td>
+                      <td>{d.h}</td>
                     </tr>
                   })}
                 </tbody>
