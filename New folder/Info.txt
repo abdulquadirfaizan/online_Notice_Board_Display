@@ -1,1 +1,0 @@
-This repositry contains the Online Display Board of Department created with React, Nodejs and MySQL
