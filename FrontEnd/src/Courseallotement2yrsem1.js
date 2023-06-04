@@ -98,9 +98,11 @@ export const CourseAllotment2yrsem1 = () => {
   };
 
   const handleDeleteTeacher = (teacherId) => {
+    alert("Do you really wants to delete this data ?")
     const updatedTeachers = teachers.filter((teacher) => teacher.id !== teacherId);
     const updatedAllotment = { ...allotment };
     delete updatedAllotment[teachers.find((teacher) => teacher.id === teacherId).name];
+    alert("Deleted Successfully...")
     setTeachers(updatedTeachers);
     setAllotment(updatedAllotment);
   };
@@ -214,9 +216,12 @@ export const CourseAllotment2yrsem1 = () => {
 
                 {errorMessage && <p className="error-message">{errorMessage}</p>}
               </div>
+                <div className='TDT'><h2>Allotment Details</h2>
+                
+                
               <div className="AllotmentDetails">
-                <h2>Allotment Details</h2>
                 <table className="allotment-table">
+                
                   <thead>
                     <tr>
                       <th>Teacher</th>
@@ -252,6 +257,7 @@ export const CourseAllotment2yrsem1 = () => {
                     ))}
                   </tbody>
                 </table>
+                </div>
               </div>
             </div>
           </div>

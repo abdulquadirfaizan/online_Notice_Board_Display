@@ -386,6 +386,8 @@ hr {
     width: 60vw;
     margin-left: auto;
     margin-right: auto;
+    max-height: 600px;
+    overflow-y: auto;
 }
 
 .AllotmentDetails table {
@@ -411,6 +413,7 @@ hr {
     justify-content: center;
     font-weight: bold;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .form-group {
@@ -498,7 +501,7 @@ hr {
     background-color: #d3f0c2;
 }
 
-.allotment-table th:nth-child(1) {
+/* .allotment-table th:nth-child(1) {
     border-bottom: 1px solid #ddd;
     height: 5vh;
     width: 1vw;
@@ -507,10 +510,10 @@ hr {
     border-top: none;
     padding: 1%;
     color: black;
-    /* background-color: red; */
+    /* background-color: red; 
     font-size: 1.2vw;
     border-top-left-radius: 8px;
-}
+} */
 
 .courseallotmentbase {
     display: flex;
@@ -2475,27 +2478,27 @@ table {
     padding: 2%;
 }
 
-table th:nth-child(1) {
+/* table th:nth-child(1) {
     border: 1px solid;
     height: 5vh;
     width: 1vw;
     padding: 1%;
     color: black;
-    /* background-color: red; */
+    /* background-color: red; 
     font-size: 1.2vw;
     border-top-left-radius: 8px;
-}
+} */
 
-table th:nth-child(7) {
+/* table th:nth-child(7) {
     border: 1px solid;
     height: 5vh;
     width: 1vw;
     padding: 1%;
     color: white;
-    /* background-color: red; */
+    /* background-color: red; 
     font-size: 1.2vw;
     border-top-right-radius: 8px;
-}
+} */
 
 table th {
     border: 1px solid;
@@ -2511,22 +2514,22 @@ table td {
     text-align: center;
     color: white;
 }
-
+/*
 table tr:nth-child(7) :nth-child(1) {
     border: 1px solid;
     text-align: center;
     border-bottom-left-radius: 8px;
     color: white;
-    /* background-color: red; */
-}
+    /* background-color: red; 
+}*/
 
-table tr:nth-child(7) :nth-child(7) {
+/* table tr:nth-child(7) :nth-child(7) {
     border: 1px solid;
     text-align: center;
     border-bottom-right-radius: 8px;
     color: white;
-    /* background-color: red; */
-}
+    /* background-color: red; 
+} */
 @media only screen and (max-width:10000px){
     .mainframe{
         background-color: inherit;
@@ -12367,4 +12370,12 @@ table tr:nth-child(7) :nth-child(7) {
 }
 .circularsbase{
     background: #d7efea;
+}
+.TDT{
+    border: solid 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.TDT h1,h2,h3,h4,h5{
+    text-align: center;
 }
